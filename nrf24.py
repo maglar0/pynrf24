@@ -1104,6 +1104,8 @@ class NRF24Device(object):
         assert issubclass(register, _Register), "%r" % (register,)
 
         values = self.get(*register.FIELDS)
+        if not isinstance(values, tuple):
+            values = (values,)
 
         table = []
         for field, value in zip(register.FIELDS, values):
