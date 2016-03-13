@@ -531,7 +531,7 @@ class _RegisterField(object):
         assert value is None or "W" in self.RW, (
                 "Can't write to register %s:%s" % (self.REGISTER_NAME, self.FIELD_NAME))
         assert value is None or 0 <= value <= self.get_max_value(), (
-                "%d is out of range for register %s:%s" % (value, self.REGISTER_NAME, self.field_name))
+                "%d is out of range for register %s:%s" % (value, self.REGISTER_NAME, self.FIELD_NAME))
         self.value = value
 
     def get_unshifted_value(self):
