@@ -903,7 +903,7 @@ class NRF24Device(object):
         From nRF24L01+ product specification:
         "Read RX payload width for the top R_RX_PAYLOAD in the RX FIFO.
         Note: Flush RX FIFO if the read value is larger than 32 bytes." """
-        data = spi.xfer2([0b01100000, _SPI_NOP])
+        data = self._spi.xfer2([0b01100000, _SPI_NOP])
         status, size = data[0], data[1]
         return status, size
 
@@ -914,7 +914,7 @@ class NRF24Device(object):
         Reuse last transmitted payload.
         TX payload reuse is active until W_TX_PAYLOAD or FLUSH TX is executed. TX payload reuse must not be activated or deacti- vated during package transmission."
         """
-        status_in_list = spi.xfer2([0b11100011])
+        status_in_list = self._spi.xfer2([0b11100011])
         status = status_in_list[0]
         return status
 
