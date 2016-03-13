@@ -323,7 +323,7 @@ Set RX_ADDR_P0 equal to this address to handle automatic acknowledge if this is 
 
     _RegisterInfo("RX_PW_P0", 0x11, 1, 1, [
             _RegisterFieldInfo("Reserved", 6, 2, 0, "R/W", "Only '00' allowed"),
-            _RegisterFieldInfo("RX_PW_P0", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 0 (1 to 32 bytes).
+            _RegisterFieldInfo("RX_PW_P0", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 0 (1 to 32 bytes). Only valid when using static payload size.
 0 Pipe not used
 1 = 1 byte
 ...
@@ -333,7 +333,7 @@ Set RX_ADDR_P0 equal to this address to handle automatic acknowledge if this is 
 
     _RegisterInfo("RX_PW_P1", 0x12, 1, 1, [
             _RegisterFieldInfo("Reserved", 6, 2, 0, "R/W", "Only '00' allowed"),
-            _RegisterFieldInfo("RX_PW_P1", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 1 (1 to 32 bytes).
+            _RegisterFieldInfo("RX_PW_P1", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 1 (1 to 32 bytes). Only valid when using static payload size.
 0 Pipe not used
 1 = 1 byte
 ...
@@ -343,7 +343,7 @@ Set RX_ADDR_P0 equal to this address to handle automatic acknowledge if this is 
 
     _RegisterInfo("RX_PW_P2", 0x13, 1, 1, [
             _RegisterFieldInfo("Reserved", 6, 2, 0, "R/W", "Only '00' allowed"),
-            _RegisterFieldInfo("RX_PW_P2", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 2 (1 to 32 bytes).
+            _RegisterFieldInfo("RX_PW_P2", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 2 (1 to 32 bytes). Only valid when using static payload size.
 0 Pipe not used
 1 = 1 byte
 ...
@@ -353,7 +353,7 @@ Set RX_ADDR_P0 equal to this address to handle automatic acknowledge if this is 
 
     _RegisterInfo("RX_PW_P3", 0x14, 1, 1, [
             _RegisterFieldInfo("Reserved", 6, 2, 0, "R/W", "Only '00' allowed"),
-            _RegisterFieldInfo("RX_PW_P3", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 3 (1 to 32 bytes).
+            _RegisterFieldInfo("RX_PW_P3", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 3 (1 to 32 bytes). Only valid when using static payload size.
 0 Pipe not used
 1 = 1 byte
 ...
@@ -363,7 +363,7 @@ Set RX_ADDR_P0 equal to this address to handle automatic acknowledge if this is 
 
     _RegisterInfo("RX_PW_P4", 0x15, 1, 1, [
             _RegisterFieldInfo("Reserved", 6, 2, 0, "R/W", "Only '00' allowed"),
-            _RegisterFieldInfo("RX_PW_P4", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 4 (1 to 32 bytes).
+            _RegisterFieldInfo("RX_PW_P4", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 4 (1 to 32 bytes). Only valid when using static payload size.
 0 Pipe not used
 1 = 1 byte
 ...
@@ -373,7 +373,7 @@ Set RX_ADDR_P0 equal to this address to handle automatic acknowledge if this is 
 
     _RegisterInfo("RX_PW_P5", 0x16, 1, 1, [
             _RegisterFieldInfo("Reserved", 6, 2, 0, "R/W", "Only '00' allowed"),
-            _RegisterFieldInfo("RX_PW_P5", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 5 (1 to 32 bytes).
+            _RegisterFieldInfo("RX_PW_P5", 0, 6, 0, "R/W", """Number of bytes in RX payload in data pipe 5 (1 to 32 bytes). Only valid when using static payload size.
 0 Pipe not used
 1 = 1 byte
 ...
